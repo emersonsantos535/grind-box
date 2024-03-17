@@ -1,0 +1,150 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body {
+        color: #000;
+      }
+
+      .home {
+        display: block;
+        margin-bottom: 30px;
+      }
+
+      .child {
+        background-color: #048;
+        color: #fff;
+        border: 1px solid #000;
+        text-align: center;
+      }
+      .child5 {
+        background-color: #048;
+        color: #fff;
+        border: 1px solid #000;
+        text-align: center;
+      }
+
+      .conteiner {
+        border-top: 10px solid red;
+        border-bottom: 10px solid red;
+      }
+
+      .conteiner2 {
+        border-bottom: 10px solid red;
+      }
+      .conteiner3 {
+        border-bottom: 10px solid red;
+      }
+      .conteiner4 {
+        border-bottom: 10px solid red;
+      }
+      .conteiner5 {
+        border-bottom: 10px solid red;
+      }
+
+      /* começa daqui para baixo. Essas que que aí em cima foi propriedades de designer e de organização */
+
+      .conteiner {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 10px;
+        /* o column-gap adicionou um espaço de 10px entre as colunas */
+      }
+
+      .conteiner2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 10px;
+        /* o row-gap adicionou um espaço de 10px entre as linhas */
+      }
+
+      .conteiner3 {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px 50px;
+        /*  gap adicionou 10px entre as linhas e 50px entre as colunas */
+      }
+
+      .conteiner4 {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        /*   o gap distribuiu igualmente 10px de distância entre as colunas e as linhas */
+      }
+
+      .conteiner5 {
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+      .child5 {
+        margin: 5px;
+        /*  essa classe "child5" é do container "conteiner5". Foi margem de 5px entre as colunas e as linhas. Esse distaciamneto entre os elementos , foi um distaciamento no elemento e não tem nada haver com template */
+      }
+      /* IMPORTANTE: Quando trabalha com GAP adiciona o espaçamento no próprio elemento (no layout do grid) e quando trabalha com margem adiciona espaçamento no  próprio elemento */
+    </style>
+  </head>
+  <body>
+    <a href="index.html" class="home">home</a>
+    <div class="conteiner">
+      <div class="child">item 1</div>
+      <div class="child">item 2</div>
+      <div class="child">item 3</div>
+      <div class="child">item 4</div>
+      <div class="child">item 5</div>
+      <div class="child">item 6</div>
+      <div class="child">item 7</div>
+      <div class="child">item 8</div>
+      <div class="child">item 9</div>
+    </div>
+    <div class="conteiner2">
+      <div class="child">item 1</div>
+      <div class="child">item 2</div>
+      <div class="child">item 3</div>
+      <div class="child">item 4</div>
+      <div class="child">item 5</div>
+      <div class="child">item 6</div>
+      <div class="child">item 7</div>
+      <div class="child">item 8</div>
+      <div class="child">item 9</div>
+    </div>
+    <div class="conteiner3">
+      <div class="child">item 1</div>
+      <div class="child">item 2</div>
+      <div class="child">item 3</div>
+      <div class="child">item 4</div>
+      <div class="child">item 5</div>
+      <div class="child">item 6</div>
+      <div class="child">item 7</div>
+      <div class="child">item 8</div>
+      <div class="child">item 9</div>
+    </div>
+    <div class="conteiner4">
+      <div class="child">item 1</div>
+      <div class="child">item 2</div>
+      <div class="child">item 3</div>
+      <div class="child">item 4</div>
+      <div class="child">item 5</div>
+      <div class="child">item 6</div>
+      <div class="child">item 7</div>
+      <div class="child">item 8</div>
+      <div class="child">item 9</div>
+    </div>
+    <div class="conteiner5">
+      <div class="child5">item 1</div>
+      <div class="child5">item 2</div>
+      <div class="child5">item 3</div>
+      <div class="child5">item 4</div>
+      <div class="child5">item 5</div>
+      <div class="child5">item 6</div>
+      <div class="child5">item 7</div>
+      <div class="child5">item 8</div>
+      <div class="child5">item 9</div>
+    </div>
+  </body>
+</html>

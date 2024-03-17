@@ -1,0 +1,102 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .home {
+        margin-bottom: 50px;
+      }
+      .child1 {
+        background-color: red;
+      }
+      .child2 {
+        background-color: blue;
+      }
+      .child3 {
+        background-color: green;
+      }
+      .child4 {
+        background-color: rgb(255, 0, 140);
+      }
+      .child5 {
+        background-color: rgb(24, 23, 22);
+      }
+      .child6 {
+        background-color: rgb(9, 79, 145);
+      }
+      .child7 {
+        background-color: rgb(39, 7, 11);
+      }
+      .child8 {
+        background-color: rgba(137, 195, 206, 0.301);
+      }
+      .conteiner {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-bottom: 50px;
+      }
+      .div {
+        border: 1px solid black;
+        text-align: center;
+      }
+      .it1 {
+        grid-row-start: ;
+        grid-row-end: ;
+      }
+
+      .pai {
+        display: grid;
+        align-items: ;
+        grid-template-columns: auto auto auto;
+        grid-template-areas: "f1" "f2" "f3";
+      }
+
+      .f1 {
+        background-color: aqua;
+        height: 300px;
+        width: 200px;
+        grid-area: ;
+      }
+
+      .f2 {
+        background-color: violet;
+        height: 150px;
+        width: 200px;
+        align-items: ;
+        grid-area: ;
+      }
+      .f3 {
+        background-color: brown;
+        height: 150px;
+        width: 200px;
+        grid-area: ;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="home"><a href="index.html" rel="prev">home</a></div>
+    <div class="conteiner">
+      <div class="child1 div it1">div</div>
+      <div class="child2 div">div</div>
+      <div class="child3 div">div</div>
+      <div class="child4 div">div</div>
+      <div class="child5 div">div</div>
+      <div class="child6 div">div</div>
+      <div class="child7 div">div</div>
+      <div class="child8 div">div</div>
+    </div>
+    <div class="pai">
+      <div class="filho f1">div</div>
+      <div class="filho f2">div</div>
+      <div class="filho f3">div</div>
+    </div>
+  </body>
+</html>

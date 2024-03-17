@@ -1,0 +1,100 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body {
+        color: #000;
+      }
+
+      .home {
+        display: block;
+        margin-bottom: 30px;
+      }
+
+      .child {
+        background-color: #048;
+        color: #fff;
+        border: 1px solid #000;
+        text-align: center;
+      }
+
+      .conteiner {
+        border-top: 10px solid red;
+        border-bottom: 10px solid red;
+      }
+
+      .conteiner2 {
+        border-bottom: 10px solid red;
+      }
+
+      .conteiner3 {
+        border-bottom: 10px solid red;
+      }
+
+      /* começa daqui para baixo. Essas que que aí em cima foi propriedades de designer e de organização */
+
+      .conteiner {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 150px;
+        /* colocando esse valor de 150px no template rows somente irá valer para a primeira linha */
+      }
+
+      .conteiner2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 150px 50px;
+        /* a primeira linha é 150px a segunda linha 50px */
+      }
+
+      .conteiner3 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 150px auto 50px;
+        /* a primeira linha é 150px a segunda linha auto e a terceira linha 50px */
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html" class="home">home</a>
+    <div class="conteiner">
+      <div class="child">item 1</div>
+      <div class="child">item 2</div>
+      <div class="child">item 3</div>
+      <div class="child">item 4</div>
+      <div class="child">item 5</div>
+      <div class="child">item 6</div>
+      <div class="child">item 7</div>
+      <div class="child">item 8</div>
+      <div class="child">item 9</div>
+    </div>
+    <div class="conteiner2">
+      <div class="child">item 1</div>
+      <div class="child">item 2</div>
+      <div class="child">item 3</div>
+      <div class="child">item 4</div>
+      <div class="child">item 5</div>
+      <div class="child">item 6</div>
+      <div class="child">item 7</div>
+      <div class="child">item 8</div>
+      <div class="child">item 9</div>
+    </div>
+    <div class="conteiner3">
+      <div class="child">item 1</div>
+      <div class="child">item 2</div>
+      <div class="child">item 3</div>
+      <div class="child">item 4</div>
+      <div class="child">item 5</div>
+      <div class="child">item 6</div>
+      <div class="child">item 7</div>
+      <div class="child">item 8</div>
+      <div class="child">item 9</div>
+    </div>
+  </body>
+</html>

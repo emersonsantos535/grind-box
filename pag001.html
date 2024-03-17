@@ -1,0 +1,135 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        body {
+    color: #000;
+  }
+  
+.home{
+    display: block;
+    margin-bottom: 30px;
+}
+
+.child {
+    background-color: #048;
+    color: #fff;
+    border: 1px solid #000;
+    text-align: center;
+  }
+
+.conteiner{
+    border-top: 10px solid red;
+        border-bottom: 10px solid red;
+}
+
+  .conteiner2{
+ 
+        border-bottom: 10px solid red;
+}
+
+.conteiner3{
+        border-bottom: 10px solid red;
+}
+.conteiner4{
+        border-bottom: 10px solid red;
+}
+
+/* começa daqui para baixo. Essas que que aí em cima foi propriedades de designer e de organização */
+
+.conteiner{
+    display: grid; 
+    /* esta informando que é uma grade, porém não determinou o display da grade */
+}
+
+.conteiner2{
+    display: inline-grid; 
+    /* passa a usar área disponível do maior elemento */
+}
+
+
+
+.conteiner3{
+    display: grid;
+    grid-template-columns: auto auto; 
+    /* estou determinado que a minha grid terá duas colunas. A quatidade de auto (atributos) representa a quantidade de item */
+}
+
+.conteiner4{
+    display: grid;
+    grid-template-columns: 50px 250px auto;
+  /*   estou especificando o tamanho das duas primeiras colunas e deixando a última auto */
+}
+
+.conteiner5{
+    display: grid;
+    grid-template-columns: 50px 250px auto;
+  /*   estou especificando o tamanho das duas primeiras colunas e deixando a última auto */
+}
+    </style>
+  </head>
+  <body>
+    <a href="index.html" class="home">home</a>
+    <div class="conteiner">
+      <div class="child">item 1</div>
+      <div class="child">item 2</div>
+      <div class="child">item 3</div>
+      <div class="child">item 4</div>
+      <div class="child">item 5</div>
+      <div class="child">item 6</div>
+      <div class="child">item 7</div>
+      <div class="child">item 8</div>
+      <div class="child">item 9</div>
+    </div>
+    <div class="conteiner2">
+        <div class="child">item 1</div>
+        <div class="child">item 2</div>
+        <div class="child">item 3</div>
+        <div class="child">item 4</div>
+        <div class="child">item 5</div>
+        <div class="child">item 6</div>
+        <div class="child">item 7</div>
+        <div class="child">item 8</div>
+        <div class="child">item 9</div>
+      </div>
+      <div class="conteiner3">
+        <div class="child">item 1</div>
+        <div class="child">item 2</div>
+        <div class="child">item 3</div>
+        <div class="child">item 4</div>
+        <div class="child">item 5</div>
+        <div class="child">item 6</div>
+        <div class="child">item 7</div>
+        <div class="child">item 8</div>
+        <div class="child">item 9</div>
+      </div>
+      <div class="conteiner4">
+        <div class="child">item 1</div>
+        <div class="child">item 2</div>
+        <div class="child">item 3</div>
+        <div class="child">item 4</div>
+        <div class="child">item 5</div>
+        <div class="child">item 6</div>
+        <div class="child">item 7</div>
+        <div class="child">item 8</div>
+        <div class="child">item 9</div>
+      </div>
+      <div class="conteiner5">
+        <div class="child">item 1</div>
+        <div class="child">item 2</div>
+        <div class="child">item 3</div>
+        <div class="child">item 4</div>
+        <div class="child">item 5</div>
+        <div class="child">item 6</div>
+        <div class="child">item 7</div>
+        <div class="child">item 8</div>
+        <div class="child">item 9</div>
+      </div>
+  </body>
+</html>
